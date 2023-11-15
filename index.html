@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Rg.css">
+    <title>RESUME GENERATOR</title>
+</head>
+
+<body>
+
+    <div class="container" id="resume-form">
+        <h1 class="text-center my-3">Resume Generator</h1>
+        <h5 class="text-center ">Create Your Resume Instantly with Our Simple Generator</h5>
+        <div class="row mt-5">
+            <div class="col md-6">
+                <h3>Personal information</h3>
+
+                <div class="form-group">
+                    <label for="nameField"> Name</label>
+                    <input type="text" id="nameField" placeholder="ENTER YOUR NAME" class="form-control">
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="phoneField"> Mobile</label>
+                    <input type="text" id="phoneField" placeholder="ENTER YOUR PHONE NUMBER" class="form-control">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="addField"> Address</label>
+                    <textarea id="addField" placeholder="ENTER YOUR ADDRESS" rows="4" class="form-control"></textarea>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="imgField">Select your photo</label>
+                    <input id="imgField" type="file" class="form-control" />
+            
+                </div>
+
+                <h2 class="text-secondary my-4"> Online Profiles Links </h2>
+                <div class="form-group mt-3">
+
+                    <label for="gitField"> Github</label>
+                    <input type="text" id="gitField" placeholder="ENTER YOUR GITHUB LINK" class="form-control">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="linkedField"> Linkedin</label>
+                    <input type="text" id="linkedField" placeholder="ENTER YOUR LINKEDIN" class="form-control">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="cchefField"> Codechef</label>
+                    <input type="text" id="cchefField" placeholder="ENTER YOUR CODECHEF" class="form-control">
+                </div>
+
+            </div>
+            <div class="col md-6">
+                <h3>Professional information</h3>
+                <div class="form-group mt-3 ">
+                    <label for="introField"> Introduction</label>
+                    <textarea id="introField" placeholder="ENTER YOUR INTRODUCTION" rows="4"
+                        class="form-control"></textarea>
+                </div>
+                <div class="form-group  mt-4" id="sk">
+                    <label for="skillField"> Skills</label>
+                    <textarea rows="2" placeholder="ENTER YOUR SKILLS" class="form-control skFIeld"></textarea>
+                    <div class="comtainer mt-2 " id="AddSkills">
+                        <button onclick="AddNewskills () " class="btn btn-primary btn-sm ">Add</button>
+                    </div>
+                </div>
+
+
+                <div class="form-group  mt-4 " id="WE">
+                    <label for="skillField"> Work Experience</label>
+                    <br>
+                    <textarea id="13" rows="2" placeholder="ENTER YOUR EXPERIENCE"
+                        class="form-control weFIeld"></textarea>
+                    <div class="comtainer mt-2  " id="addwe">
+                        <button onclick="AddNewWE ()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+
+                <div class="form-group  mt-4 " id="acad">
+                    <label for="acadField"> Academics</label>
+                    <br>
+                    <textarea rows="2" placeholder="ENTER YOUR ACADEMICS" class="form-control acadFIeld"></textarea>
+                    <div class="comtainer mt-2  " id="addaq">
+                        <button onclick="AddNewAca ()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="mt-3">
+            <marquee behavior="" direction="right"> <b>ALL FIELDS ARE NECESSARY TO GENERATE RESUME</b></marquee>
+        </div>
+        <div class="container text-center my-4 ">
+            <button class="btn btn-dark btn-lg   " onclick="ResumeDone()">GENERATE RESUME</button>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container" id="resume-template">
+
+        <div class="row">
+            <div class="col md-4 text-center py-4 bg">
+                <img src="https://www.kemri.go.ke/wp-content/uploads/2020/01/495-4952535_create-digital-profile-icon-blue-user-profile-icon-500x500.png"
+                    alt="profile photo" class="img-fluid profile" id="imgTemplate">
+                <div class="container">
+                    <p id="name1">DEv Gupta</p>SS
+                    <p id="number1">8770028576</p>
+                    <p id="address1">tehsile road </p>
+                    <hr>
+                    <p><a id="gt" class="anchor" href="#1">GITHUB</a>
+                    <p>
+                    <p><a id="ldin" class="anchor" href="#2">LINKEDIN</a></p>
+                    <p><a id="ccf" class="anchor" href="#3">CODECHEF</a></p>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="col md-8 py-5 ">
+                <h1 id="name2" class="text-center fw">Dev Gupta</h1>
+
+
+                <div class="intro mt-4  ">
+                    <div class="intro-head bg ">
+                        <h3>INTRODCUTION</h3>
+                    </div>
+                    <div class="intro-body">
+                        <p id="intro2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum hic ipsa,
+                            eligendi, id, esse vel quidem temporibus atque sed possimus doloremque rem reiciendis. Illum
+                            omnis facilis aperiam dolorum ducimus tenetur deserunt qui natus voluptate voluptatum
+                            consequuntur tempore, ipsum suscipit! Minus est ea aut voluptatem quam explicabo velit
+                            minima optio impedit!</p>
+                    </div>
+                </div>
+
+                <div class="intro mt-4  ">
+                    <div class="intro-head bg ">
+                        <h3>SKILLS</h3>
+                    </div>
+                    <div class="intro-body">
+                        <ul id="skill1">
+                            <li>lorem11</li>
+                            <li>lorem12</li>
+                            <li>lorem13</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="intro mt-4  ">
+                    <div class="intro-head bg ">
+                        <h3>WORK EXPERIENCE</h3>
+                    </div>
+                    <div class="intro-body">
+                        <ul id="work1">
+                            <li id="31">lorem11</li>
+                            <li>lorem12</li>
+                            <li>lorem13</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="intro mt-4  ">
+                    <div class="intro-head bg ">
+                        <h3>ACADEMICS</h3>
+                    </div>
+                    <div class="intro-body">
+                        <ul id="aca1">
+                            <li>lorem11</li>
+                            <li>lorem12</li>
+                            <li>lorem13</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="container mt-4 text-center">
+                    <button onclick="printing()" class="btn btn-danger">print resume</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

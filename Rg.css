@@ -1,0 +1,25 @@
+#resume-form {
+        display:block;  
+}
+#resume-template{
+        display: none; 
+}
+
+
+.profile {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 200px;
+}
+
+.bg {
+    background-color: aquamarine;
+}
+
+.anchor {
+    text-decoration: none;
+}
+
+.fw {
+    font-weight: 1000;
+}
